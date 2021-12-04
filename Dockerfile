@@ -22,7 +22,8 @@ apt purge -y build-essential && \
 apt auto-remove -y && \
 rm -rf /var/cache/apt /var/lib/apt
 
-EXPOSE 80
+EXPOSE 80 1935
 
 ADD nginx.conf /opt/nginx/nginx.conf
 ADD static /www/static
+
